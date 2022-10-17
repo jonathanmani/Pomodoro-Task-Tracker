@@ -1,44 +1,29 @@
-# Introduction
+# Pomodoro Task Tracker
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+A Pomodoro Task Tracker built using the MVC Architecture. The app also implements "authorization" so anyone can sign up and set tasks on their own account
 
----
+![Pomodoro Task Tracker](Pomo.png "Pomodoro Task Tracker")
 
-> Be sure to add that lovely star 😀 and fork it for your own copy
+## How It's Made
 
----
+**Tech**: bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
 
-# Objectives
+This app was created using MVC architecture. The server was created using ExpressJS and the database used was MongoDB. Validation and user authentication was handled using PassportJs. Many of the operations to handle the tasks were created using CRUD principles.
 
-- It's a beginner level app created to understand how MVC concept and logins are added
+The app is also responsive to various screen sizes
 
----
+## Optimizations
 
-# Who is this for? 
+I plan to change the sorting of tasks to improve the speed of the operation. Currently, tasks are sorted by user selected priority within the User Model. I may change this to allow Mongoose to do the sorting once more research on the speed of the two methods are done.
 
-- It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
+## Lessons Learned
 
----
+I've learned how MVC is used to organize code as well as how requests and responses move between the client and the server. I've been able to update a database using CRUD methods and display this data using EJS as my HTML templating language. Additionally, I've learned how to use passportJs and bcrypt to create users on the database and hash their passwords for user safety and privacy
 
-# Packages/Dependencies used 
+## Check out my Other Work
 
-bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
+[InstaPrep](https://github.com/jonathanmani/InstaPrep) - Your meals should be an accident. Plan them in minutes with InstaPrep
 
----
+[DailyUI](https://github.com/jonathanmani/DailyUI) - A collection of Front End designs made using TailwindCss and React
 
-# Install all the dependencies or node packages used for development via Terminal
-
-`npm install` 
-
----
-
-# Things to add
-
-- Create a `.env` file and add the following as `key: value` 
-  - PORT: 2121 (can be any port example: 3000) 
-  - DB_STRING: `your database URI` 
- ---
- 
- Have fun testing and improving it! 😎
-
-
+[My Pocket Dictionary](https://github.com/jonathanmani/Dictionary) - A minimalist dictionary app that uses the Merriam-Webster API
